@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size:16px;
+}
+ul,li,ol{
+    list-style: none;
+}
+a{
+    color:#333;
+    display:block;
+    text-decoration: none;
+    cursor:pointer;
+}
+button{
+    border:none;
+    cursor: pointer;
+}
+
+
+/* 전체 폰트 */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+/* 포인트 폰트 */
+@font-face {
+    font-family: 'LeferiPoint-SpecialItalicA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-SpecialItalicA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LeferiPoint-SpecialA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-SpecialA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Tiempos Headline Medium";
+    src: url("https://db.onlinewebfonts.com/t/c4fabfb67581c36f8a78b7ef7142d80e.eot");
+    src: url("https://db.onlinewebfonts.com/t/c4fabfb67581c36f8a78b7ef7142d80e.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/c4fabfb67581c36f8a78b7ef7142d80e.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/c4fabfb67581c36f8a78b7ef7142d80e.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/c4fabfb67581c36f8a78b7ef7142d80e.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/c4fabfb67581c36f8a78b7ef7142d80e.svg#Tiempos Headline Medium")format("svg");
+}
+
+
+
+/* @font-face{
+    font-family:'DM Serif Display';
+    src:url('DMSerifDisplay-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+} */
+
+.dm-serif display-regular {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dm-serif display-regular-italic {
+    font-family: "DM Serif Display1", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+  

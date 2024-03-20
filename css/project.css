@@ -1,0 +1,387 @@
+@charset "UTF-8";
+
+#project{
+    width:100%;
+    /* padding:100px 0; */
+    padding:180px 0 200px;
+    position:relative;
+    /* background-color: #eaf4fe; */
+}
+/* @media (min-width:414px) and (max-width:1399px){
+    #project{
+        padding:80px 0;
+    }
+} */
+/* @media (max-width:413px){
+    #project{
+        padding:60px 0 50px;
+    }
+} */
+
+#project>h1{
+    color:#fff;
+    font-size: 8rem;
+    font-family: 'SBAggroB';
+    -webkit-text-stroke:2px #333;
+    position:absolute;
+    top:-10px;
+}
+
+@media (min-width:1400px){
+    #project>h1{
+        transform: translateX(-120%);
+        transition: all 2s;
+        opacity:0;
+    }
+}
+@media (max-width:1399px){
+    #project{
+        padding:100px 0;
+    }
+    #project>h1{
+        padding:0 3%;
+        font-size:10vw;
+        position:relative;
+        top:0;
+    }
+}
+/* @media (min-width:413px) and (max-width:699px){
+    #project>h1{
+        font-size:15vw;
+    }
+}
+@media (max-width:413px){
+    #project>h1{
+        font-size:10vw;
+    }
+} */
+
+
+/* ===== 프로젝트 모든 요소들 ===== */
+.project-wrap{
+    width:1400px;
+    /* height: 100%; */
+    margin:0 auto;
+    /* display:grid; */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* justify-items: center; */
+    /* align-items: center; */
+    /* gap:30px 0; */
+    /* z-index:2; */
+    position:relative;
+}
+@media (max-width:1399px){
+    .project-wrap{
+        width:90vw;
+    }
+}
+/* @media (min-width:1000px) and (max-width:1399px){
+    .project-wrap{
+        gap:30px 20px;
+    }
+} */
+
+/* @media (min-width:700px) and (max-width:999px){
+    .project-wrap{
+        gap:30px;
+        grid-template-columns:1fr 1fr 1fr;
+    }
+} */
+/* @media (max-width:699px){
+    .project-wrap{
+        grid-template-columns: 1fr 1fr;
+        gap:30px;
+    }
+} */
+
+.project-tab{
+    /* width:1400px; */
+    width:100%;
+    /* height:90px; */
+    margin:0 auto;
+    padding-bottom:30px;
+    display:flex;
+    text-align: center;
+    /* font-family: 'LeferiPoint-SpecialItalicA'; */
+    font-family: 'LeferiPoint-SpecialA';
+}
+@media (min-width:1400px){
+    .project-tab{
+        height:90px;
+    }
+}
+.project-tab a{ /* .project-tab li */
+    width:25%;
+    line-height: 2;
+    font-size:2.3rem;
+    /* border-radius: 15px; */
+    /* border-bottom:2px solid #fafafa; */
+    cursor: pointer;
+    position:relative;
+}
+
+.project-tab a:hover{ /* .project-tab li */
+    opacity:0.5;
+}
+.project-tab a.tabclick:hover { /* .project-tab li */
+    opacity: 1;
+}
+
+
+.project-tab a:nth-of-type(2)::after{ /* .project-tab li */
+    content:'';
+    width:2px;
+    /* height:55px; */
+    height:60px;
+    /* background-color:#003296; */
+    background-color: #4E9525;
+    /* background-color: #393939; */
+    display:block;
+    position:absolute;
+    /* top:4px; */
+    top:0px;
+    left:0px;
+}
+.project-tab a:nth-of-type(3)::after{ /* .project-tab li */
+    content:'';
+    width:2px;
+    /* height:55px; */
+    height:60px;
+    /* background-color:#003296; */
+    background-color: #4E9525;
+    /* background-color: #393939; */
+    display:block;
+    position:absolute;
+    /* top:4px; */
+    top:0px;
+    left:0px;
+}
+.project-tab a:nth-of-type(4)::after{ /* .project-tab li */
+    content:'';
+    width:2px;
+    /* height:55px; */
+    height:60px;
+    /* background-color:#003296; */
+    background-color: #4E9525;
+    /* background-color: #393939; */
+    display:block;
+    position:absolute;
+    /* top:4px; */
+    top:0px;
+    left:0px;
+}
+.tabclick{
+    /* background-color: #488eb0; */
+    /* background-color: #003296; */
+    background-color: #4E9525;
+    /* background-color: #393939; */
+    color:#fafafa;
+}
+
+
+.project-report>div{
+    /* height:35rem; */
+    padding:70px; 
+    display:flex;
+    /* background-color:#fafafa; */
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.project-report>div:not(:nth-child(1)){
+    display:none;
+}
+
+.project-report-left{
+    /* width:55%; */
+    /* padding:0 60px; */
+    width:60%;
+    padding:0 30px;
+}
+/* .project-report-right{
+    width:45%;
+} */
+.project-report-left h2{
+    font-size: 2.5rem;
+    /* padding-bottom:5%; */
+}
+.project-report-left h2 span{
+    font-size:1.8rem;
+}
+.project-report-left p{
+    font-size: 1.35rem;
+    word-break:keep-all;
+    line-height:1.5;
+}
+.project-report-left>p:not(:nth-child(2)){
+    font-size:1.2rem;
+}
+
+.project-report-left p:nth-child(2){
+    padding:40px 0 30px;
+}
+.project-report-left p span{
+    font-size: 1.3rem;
+    color:#636363;
+}
+
+.project-report-right{
+    width:40%;
+}
+.project-report-right img{
+    width:100%;
+}
+
+
+@media (max-width:1399px){
+    
+    .project-tab{
+        width:100%;
+        padding-bottom:3%;
+    }
+    .project-tab a{
+        height:6vw;
+        font-size:3vw;
+        line-height:7vw;
+    }
+    .project-tab a:nth-of-type(2)::after,.project-tab a:nth-of-type(3)::after,.project-tab a:nth-of-type(4)::after{
+        height:6vw;
+    }
+
+    .project-report>div{
+        padding:4% 0;
+    }
+    .project-report-left{
+        padding:0 3%;
+    }
+    .project-report-left h2{
+        font-size:3.5vw;
+    }
+    .project-report-left h2 span{
+        font-size:2.5vw;
+    }
+    .project-report-left p{
+        font-size:2vw;
+    }
+    .project-report-left p:nth-child(2){
+        padding:6% 0;
+    }
+    .project-report-left>p:not(:nth-child(2)){
+        font-size:2vw;
+    }
+    .project-report-left p span{
+        font-size:2vw;
+    }
+    .project-report-right img{
+        /* width:40vw; */
+        width:35vw;
+    }
+
+}
+
+
+@media (max-width:767px){
+    .project-report>div{
+        flex-direction: column;
+    }
+    .project-report-left{
+        width:100%;
+        padding:0 3% 10%;
+    }
+    .project-report-left h2{
+        font-size:4.5vw;
+    }
+    .project-report-left h2 span{
+        font-size:3vw;
+    }
+    .project-report-left p{
+        font-size: 3vw;
+    }
+    .project-report-left>p:not(:nth-child(2)){
+        font-size:3vw;
+    }
+    .project-report-left p span{
+        font-size:3vw;
+    }
+    .project-report-right{
+        width:100%;
+        text-align: center;
+    }
+    .project-report-right img{
+        width:60vw;
+    }
+}
+
+
+
+/* ===== btn 나머지 css는 btn.css에 따로 있음 ===== */
+/* .project-btn{
+    width: 100%;
+    height:15%;
+    border-top:1px solid #333;
+    display:flex;
+}
+@media (min-width:1000px) and (max-width:1399px){
+    .project-btn{
+        height:20%;
+    }
+}
+@media (min-width:700px) and (max-width:999px){
+    .project-btn{
+        height:20%;
+    }
+}
+@media (max-width:699px){
+    .project-btn{
+        height:22%;
+    }
+}
+
+.btn-left{
+    width:50%;
+    height:100%;
+    border-right:1px dotted #333;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.btn-left-one{
+    width:50%;
+    height: 100%;
+    border-right:1px dotted #333;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.btn-right{
+    width:50%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+@media (max-width:1399px){
+    .btn-left{
+        flex-direction:column;
+    }
+    .btn-right{
+        flex-direction: column;
+    }
+}
+@media (max-width:699px){
+    .btn-left{
+        flex-direction:column;
+    }
+    .btn-right{
+        flex-direction: column;
+    }
+}
+
+.btn-right-one{
+    width:50%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+} */

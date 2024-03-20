@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+#skill{
+    width:100%;
+    margin:0 auto;
+    /* padding:110px 0; */
+    padding:100px 0 200px;
+    position:relative;
+    /* background-color: #eaf4fe; */
+    /* background-color: #674f80; */
+}
+@media (max-width:1399px){
+    #skill{
+        padding:100px 0;
+    }
+}
+/* @media (min-width:414px) and (max-width:1399px){
+    #skill{
+        padding:80px 0;
+    }
+} */
+/* @media (max-width:413px){
+    #skill{
+        padding:60px 0 50px;
+    }
+} */
+
+#skill h1{
+    color:#fff;
+    font-size: 9rem;
+    font-family: 'SBAggroB';
+    /* -webkit-text-stroke:2px #333; */
+    -webkit-text-stroke:2px #393939;
+    position:absolute;
+    top:-10px;
+
+}
+@media (min-width:1400px){
+    #skill h1{
+        transform: translateX(-150%);
+        transition: all 1.5s;
+        opacity:0;
+    }
+}
+@media (max-width:1399px){
+    #skill h1{
+        padding:0 3%;
+        font-size:13vw;
+        position:relative;
+        top:0;
+    }
+}
+/* @media (min-width:414px) and (max-width:699px){
+    #skill h1{
+        font-size:15vw;
+    }
+}
+@media (max-width:413px){
+    #skill h1{
+        font-size:10vw;
+    }
+} */
+
+.skill-wrap{
+    width:1400px;
+    /* width:1100px; */
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    justify-items: center;
+    /* gap:50px 0px; */
+    gap:30px 0;
+    /* gap:30px; */
+}
+@media (max-width:1399px){
+    .skill-wrap{
+        /* width:90vw; */
+        width:100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap:45px 0px;
+    }
+}
+@media (max-width:999px){
+    .skill-wrap{
+        grid-template-columns:1fr 1fr 1fr;
+    }
+}
+@media (max-width:767px){
+    .skill-wrap{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+/* @media (max-width:413px){
+    .skill-wrap{
+        gap:45px 0px;
+    }
+} */
+
+@media (max-width:499px){
+    .skill-wrap{
+        grid-template-columns:1fr;
+    }
+}
+/* ===== skill 박스들 ===== */
+.skill-wrap>div{
+    /* width:206px; */
+    width:15rem;
+    /* height:206px; */
+    height:15rem;
+    /* background-color: #fff; */
+    background-color: #fafafa;
+    /* text-align: center; */
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 0px 1px 5px #333; */
+    box-shadow:5px 5px 10px #ababab;
+    gap:25px;
+    border-radius: 5px;
+}
+/* @media (max-width:767px){
+    .skill-wrap>div{
+        width:25vw;
+        height:25vw;
+    }
+} */
+
+/* @media (min-width:1000px) and (max-width:1399px){
+    .skill-wrap>div{
+        max-width:190px;
+        max-height:190px;
+    }
+} */
+/* @media (min-width:414px) and (max-width:999px){
+     .skill-wrap>div{
+        max-width:180px;
+        max-height:180px;
+    }       
+} */
+/* @media (max-width:413px){
+    .skill-wrap>div{
+        max-width:170px;
+        max-height:170px;
+    }
+} */
+/* @media (max-width:389px){
+    .skill-wrap>div{
+        max-width:180px;
+        max-height:180px;
+    }
+} */
+
+
+.skill-wrap>div img{
+    /* width:100px; */
+    /* width:5rem; */
+    width:4.5rem;
+    /* height:100px; */
+    /* height:5rem; */
+    height:4.5rem;
+    /* margin-bottom:15px; */
+}
+.skill-wrap>div:nth-of-type(15) img{
+    margin-bottom:0;
+}
+.skill-git{
+    width:100px;
+    height:100px;
+    margin-bottom:15px;
+    font-size:100px;
+}
+.skill-wrap>div>p{
+    text-align: center;
+    font-family: 'LeferiPoint-SpecialItalicA';
+    /* font-size: 20px; */
+    /* font-size:1.5rem; */
+    font-size:1.125rem;
+    font-weight: bold;
+}
+.skill-text{
+    width:100%;
+    height:100%;
+    /* padding:20px; */
+    /* padding:20px 25px; */
+    padding:30px;
+    /* background-color:rgba(72, 142, 176,0.9); */
+    /* background-color: rgba(98,0,238,0.8); */
+    /* background-color:rgba(0, 50, 150,0.8); */
+    /* background-color:rgba(233, 132, 78, 0.8); */
+    /* background-color:rgba(254, 122, 54,0.8); */
+    background-color: rgba(78, 149, 37,0.8);
+    /* background-color:rgba(57, 57, 57,0.8); */
+    color:#fff;
+    position:absolute;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.skill-text p{
+    line-height:30px;
+    /* font-size:1.125rem; */
+    font-size:1.25rem;
+    color:#fafafa;
+}
+.skill-wrap>div:nth-child(2)>.skill-text p{
+    font-size:1rem;
+}
+
+@media (max-width:1399px){
+    .skill-text p{
+        font-size:0.8rem;
+    }
+}
+@media (max-width:999px) {
+    .skill-wrap>div:nth-child(2) .skill-text p{
+        font-size:0.78rem;
+    }
+    .skill-wrap>div .skill-text p{
+        font-size:0.9rem;
+    }
+}
+@media (max-width:413px){
+    .skill-wrap>div:nth-child(2) .skill-text p{
+        font-size:0.72rem;
+    }
+}

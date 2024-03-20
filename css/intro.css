@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+#intro{
+    width:100%;
+    height:100vh;
+    /* height:50vh; */
+    /* background: linear-gradient(180deg, #488eb0 0%, #eaf4fe 100%); */
+    /* background-color: rgb(61,66,74); */
+    /* background-color: #674f80; */
+    /* background-color: #f1e8e3; */
+    position:relative;
+    overflow:hidden;
+    border-bottom:1px solid #333;
+    /* padding:130px 0 100px; */
+    /* padding:150px 0 130px; */
+    padding:200px 0 150px;
+}
+.intro-wrap{
+    width:1400px; 
+    /* width:5000px; */
+    height:100%;
+    margin:0 auto;
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.intro-wrap p{
+    /* padding-left:35px; */
+    /* font-size: 200px; */
+    font-size:clamp(10vw,12vw,200px);
+    /* font-family: "Tiempos Headline Medium"; */
+    /* font-family:'DM Serif Display'; */
+    font-family: "DM Serif Display", serif;
+    
+}
+.intro-wrap p:nth-child(1){
+    animation:moveright 2s ease;
+    /* color:#393939; */
+    /* color:#555555; */
+    color:#6c6c6c;
+}
+.intro-wrap p:nth-child(2){
+    transform: translateX(0%);
+    animation:moveleft 2s ease;
+    /* color:#555555; */
+    /* color:#003296; */
+    color:#393939;
+}
+
+@keyframes moveright{
+    0%{
+        transform: translateX(-100%);
+        opacity:0;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity:1;
+    }
+}
+
+@keyframes moveleft{
+    0%{
+        transform:translateX(100%);
+        opacity:0;
+    }
+    100%{
+        transform: translateX(0%);;
+        opacity: 1;
+    }
+}
+@media (max-width:1399px){
+    #intro{
+        height:100dvh;
+        padding:100px 0;
+    }
+    .intro-wrap{
+        width:100%;
+    }
+    .intro-wrap p{
+        /* font-size:6rem; */
+        /* font-size:12vw; */
+        white-space: nowrap;
+    }
+}
+
+/* @media (min-width:1000px) and (max-width:1399px){
+    .intro-wrap{
+        width:1000px;
+    }  
+} */
+
+/* @media (min-width:700px) and (max-width:999px){
+    .intro-wrap{
+        width:700px;
+    }
+} */
+
+/* @media (max-width:699px){
+    .intro-wrap{
+        width:90vw;
+    }
+} */
+
+.intro-textbox{
+    animation:move 50s linear infinite;
+    white-space: nowrap;
+    position:absolute;
+    top:30%;
+}
+.intro-textbox span{
+    font-size:300px;
+    color:#efefef;
+}
+
+@keyframes move{
+    0%{
+        transform:translateX(0%);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
+.me-img{
+    width:37.5rem;
+    position:absolute;
+    /* top:50%; */
+    top:37%;
+    right:0;
+    /* transform: translateY(-50%); */
+}

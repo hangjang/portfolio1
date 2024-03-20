@@ -1,0 +1,368 @@
+@charset "UTF-8";
+
+#profile{
+    width:100%;
+    /* height:100vh; */
+    /* padding:110px 0; */
+    /* padding:200px 0 90px; */
+    /* padding:150px 0; */
+    padding:180px 0;
+    overflow:hidden;
+    /* background-color: #eaf4fe; */
+    /* background-color: #fff9ee; */
+}
+.profile-wrap{
+    width:1400px;
+    height:100%;
+    /* height:80%; */
+    margin:0 auto;
+    /* padding:80px 70px; */
+    padding:60px 70px;
+    
+    /* padding:70px; */
+    /* display:flex; */
+    /* background-color:#fafafa; */
+    border:1px solid #393939;
+    /* border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px; */
+    border-radius: 30px;
+    /* position:absolute; */
+    /* top:50%; */
+    /* left:50%; */
+    /* transform: translateX(-45%); */
+}
+
+@media (max-width:1399px){
+    #profile{
+        padding:100px 0;
+    }
+    .profile-wrap{
+        width:90vw;
+        /* padding:7% 8%; */
+        padding:5% 7%;
+    }
+}
+@media (max-width:767px){
+    .profile-wrap{
+        padding:7%;   
+    }
+}
+
+.aboutme{
+    display:flex;
+}
+
+.aboutme p{ /* .aboutme span */
+    /* padding-right:15px; */
+    padding-right:20px;
+    font-size:2rem;
+    /* font-family: 'LINESeedKR-Bd'; */
+    font-family: 'Pretendard-Regular';
+    position:relative;
+    font-weight: bold;
+}
+/* .aboutme p:nth-child(2){ .aboutme span */
+    /* padding:0 16px 0px 22px; */
+    /* position:relative; */
+/* } */
+/* .aboutme p:nth-of-type(2)::after{ .aboutme span
+    content:'';
+    width:4px;
+    height:30px;
+    background-color:#333;
+    display:block;
+    position:absolute;
+    top:4px;
+    left:0px;
+} */
+
+.aboutme p:nth-child(5){ /* .aboutme span */
+    /* padding:0 20px; */
+    /* padding:0 16px 0px 22px; */
+    /* position:relative; */
+    /* color:#488eb0; */
+    /* color:#674f80; */
+    /* color: #6200ee; */
+    /* color:#003296; */
+    /* color:#E9844E; */
+    /* color:#FE7A36; */
+    color:#4E9525;
+    /* color:#393939; */
+}
+/* .aboutme p:nth-of-type(3)::after{ .aboutme span
+    content:'';
+    width:4px;
+    height:30px;
+    background-color:#333;
+    display:block;
+    position:absolute;
+    top:4px;
+    left:0px;
+} */
+@media (max-width:767px){
+    .aboutme{
+        padding-bottom:3%;
+    }
+    .aboutme p{ /* .aboutme span */
+        font-size:4vw;
+        padding-right:2.5%;
+    }
+    /* .aboutme p:nth-child(2),.aboutme p:nth-child(3){ .aboutme span
+        padding:0 3% 0 5%;
+    }
+    .aboutme p:nth-of-type(2)::after,.aboutme p:nth-of-type(3)::after{ .aboutme span
+        height:4vw;
+    } */
+}
+/* @media (min-width:1000px) and (max-width:1399px){
+    .aboutme span:nth-of-type(2)::after{
+        top:0%;
+    }
+    .aboutme span:nth-of-type(3)::after{
+        top:0%;
+    }
+} */
+/* @media (max-width:699px){
+    .aboutme{
+        width:100%;
+    }
+    .aboutme span{
+        font-size:4vw;
+    }
+    .aboutme span:nth-of-type(2)::after, .aboutme span:nth-of-type(3)::after{
+        height:4vw;
+    }
+} */
+
+
+/* ===== profile 멘트(ment) ===== */
+.ment{
+    padding:3% 0 5%;
+}
+.ment p{
+    /* font-size:1.05rem; */
+    font-size:20px;
+    line-height:1.6;
+    word-break: keep-all;
+    color:#212121;
+}
+.ment p>span{
+    /* color:#488eb0; */
+    /* color: #6200ee; */
+    /* color:#003296; */
+    /* color:#E9844E; */
+    /* color:#FE7A36; */
+    color:#4E9525;
+    /* color:#393939; */
+    font-size:1.5rem;
+    font-weight: bold;
+}
+/* @media (max-width:699px){
+    .ment p{
+        font-size:3vw;
+    }
+    .ment p>span{
+        font-size:3.5vw;
+    }
+} */
+
+@media (max-width:767px){
+    .ment p{
+        font-size:3vw;
+    }
+    .ment p>span{
+        font-size:3.5vw;
+    }
+}
+
+/* ===== profile 자격증(certificate) ===== */
+.introduce{
+    width:100%;
+    display:flex;
+    padding-bottom:10px;
+    border-bottom:1px solid #ababab;
+}
+.introduce>div h2{
+    padding-bottom:5%;
+    font-size:2.3rem;
+    font-family: 'LeferiPoint-SpecialItalicA';
+    font-weight: bold;
+    /* letter-spacing: 5px; */
+    letter-spacing: 1.2px;
+}
+.introduce>div span{
+    font-size:20px;
+}
+
+
+
+/* ===== profile 자격증(certificate) ===== */
+.certi{
+    /* width:80%; */
+    width:50%;
+    padding-bottom:1.5%;
+    /* border-bottom: 1px solid #333; */
+}
+.certi span:nth-child(2){
+    padding-right:20px;
+    font-weight: bold;
+}
+.certi span:nth-child(3){
+    /* color:#787878; */
+    color:#686868;
+}
+
+/* ===== profile 교육사항(education) ===== */
+.edu{
+    /* width:80%; */
+    width:50%;
+    padding-bottom:1.5%;
+    /* border-bottom: 1px solid #333; */
+}
+.edu_box{
+    display:flex;
+    /* align-items: center; */
+    align-items: flex-start;
+}
+.edu_left span{
+    padding-right:20px;
+    font-weight: bold;
+}
+.edu_left>span:nth-child(2){
+    padding-left:20px;
+}
+.edu-right span{
+    /* color:#787878; */
+    color:#686868;
+}
+
+/* @media (max-width:1399px){
+    .certi{
+        width:100%;
+    }
+    .edu{
+        width:100%;
+    }
+} */
+
+/* @media (max-width:699px){
+} */
+
+@media (max-width:767px){
+    .introduce{
+        flex-direction: column;
+    }
+    .introduce>div{
+        width:100%;
+    }
+    .introduce>div h2{
+        padding-bottom: 2%;
+        font-size:5vw;
+    }
+    .introduce>div span{
+        font-size:4vw;
+    }
+    .certi{
+        padding-bottom: 5%;
+    }
+}
+
+/* ===== profile contact ===== */
+.contact h2{
+    padding:2% 0 1%;
+    font-family: 'LeferiPoint-SpecialItalicA';
+    font-size:2.3rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+    /* font-size:1.5rem; */
+}
+
+.contact>div{
+    display:flex;
+    align-items: center;
+    padding:0.5% 0;
+}
+.contact img{
+    width:2rem;
+    height:2rem;
+    font-size:1.9rem;
+}
+.contact p{
+    display:inline-block;
+    position:relative;
+    padding-left:23px;
+    font-size:1.2rem;
+}
+/* .contact td:nth-child(1){
+    width:48px;
+} */
+.contact p:hover{
+    cursor: pointer;
+}
+@media (max-width:767px){
+    .contact h2{
+        font-size:5vw;
+        padding:3% 0;
+    }
+    .contact p{
+        font-size:3.5vw;
+    }
+    .contact img{
+        width:6vw;
+        height:6vw;
+    }
+}
+
+@media (min-width:1400px){
+    .kakao p:after{
+        content:'';
+        /* width:272px; */
+        width:309px;
+        display:block;
+        /* border-bottom:2px solid #488eb0; */
+        /* border-bottom:2px solid #003296; */
+        border-bottom:2px solid #393939;
+        position:absolute;
+        transition:transform 250ms ease-in-out;
+        transform:scaleX(0);
+    }
+    .email p:after{
+        content:'';
+        /* width:176px; */
+        width:206px;
+        display:block;
+        /* border-bottom:2px solid #488eb0; */
+        /* border-bottom:2px solid #003296; */
+        border-bottom:2px solid #393939;
+        position:absolute;
+        transition:transform 250ms ease-in-out;
+        transform:scaleX(0);
+    }
+    .github p:after{
+        content:'';
+        /* width:224px; */
+        width:250px;
+        display:block;
+        /* border-bottom:2px solid #488eb0; */
+        /* border-bottom:2px solid #003296; */
+        border-bottom:2px solid #393939;
+        position:absolute;
+        transition:transform 250ms ease-in-out;
+        transform:scaleX(0);
+    }
+    .contact p:hover:after{
+        transform:scaleX(1);
+    }
+}
+
+/* @media (max-width:699px){
+    .contact caption{
+        font-size:5vw;
+    }
+    .contact tr td:nth-child(2){
+        font-size:3.5vw;
+    }
+} */
+
